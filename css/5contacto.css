@@ -7,6 +7,10 @@ a{
     text-decoration-line: none;
 }
 
+#colortexto{
+    color: white;
+}
+
 body{
     background-color: black;
 }
@@ -16,61 +20,79 @@ body{
 
     /*header*/    
     
-    #grilla1{
-        display: grid;
-        height: 279px;
-        grid-template-rows: 223px 50px;
-        grid-template-columns: 20% 30% 50%;
-        grid-template-areas: "logo vacio vacio2"
-                             "marca vacio3 nav";
+#grilla1{
+    display: grid;
+    height: 279px;
+    grid-template-rows: 223px 50px;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-areas: "logo vacio vacio2"
+                         "marca vacio3 nav";
+    background-color: black;
+    row-gap: 1%;
+}
+
+h2{
+    font-family: "Ubuntu";
+    font-size: 24px;
+    color: lightcoral;
+}
+    
+#logomarca{
+    height: 100%;
+    width: 100%;
+}
+
+#hijo1{
+    background-color: black;
+    grid-area: logo;
+}
+    
+#hijo2{
         background-color: black;
-        row-gap: 1%;
-    }
-    
-    h2{
-        font-family: "Ubuntu";
-        font-size: 24px;
-        color: lightcoral;
-    }
-    
-    #logomarca{
+        grid-area: marca;
+        align-content: center;
+        text-align: center;
+}
+
+#hijo3{
+        background-color: darkgoldenrod;
+        grid-area: nav;
         height: 100%;
-        width: 100%;
-    }
+        align-content: center;
+}
+
+.navegador{
+    font-family: "roboto";
+    font-size: 15px;
+    font-weight: 800;
+    color: darkslategrey;
+}
+
+/*navegador*/
+ul{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+/*footer*/
+
+#piedepagina{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background-color: rgb(216, 126, 91);
     
-    #hijo1{
-        background-color: black;
-        grid-area: logo;
-    }
+}
     
-    #hijo2{
-            background-color: black;
-            grid-area: marca;
-            align-content: center;
-            text-align: center;
-    }
-    
-    #hijo3{
-            background-color: darkgoldenrod;
-            grid-area: nav;
-            height: 100%;
-            align-content: center;
-    }
-    
-    .navegador{
-        font-family: "roboto";
-        font-size: 15px;
-        font-weight: 800;
-        color: darkslategrey;
-    }
-    
-    /*navegador*/
-    ul{ 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        list-style-type: none;
-    }
+.iconos{
+    height:30px;
+    width: 30px;
+}
 }
 
 
@@ -80,6 +102,7 @@ main{
 
 
 form{
-    padding-top: 50px;
+    padding-top:50px;
     padding-left: 150px;
+    padding-right: 150px;
 }

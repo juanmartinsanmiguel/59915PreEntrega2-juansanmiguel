@@ -69,33 +69,33 @@ A{
         list-style-type: none;
     }
     
+    body{
+        background-color: black;
+    }
+    
+    main{
+        padding-top: 25px;
+        padding-left: 220px;
+        height: 500px;
+    }
+    
+    /*footer*/
+    
+    #piedepagina{
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        background-color: rgb(216, 126, 91);
+    
+    }
+    
+    .iconos{
+        height:30px;
+        width: 30px;
+    }
+    
     }
 
-body{
-    background-color: black;
-}
-
-main{
-    padding-top: 25px;
-    padding-left: 220px;
-    height: 500px;
-}
-
-#piedepagina{
-    text-align: center;
-    color: darkviolet;
-    display: inline-block;
-    padding-inline: 100px;
-}
-
-.iconos{
-    display:inline-block;
-    padding-inline: 40px;
-    padding-top: 2%;
-}
-
-footer{
-    background-color: lightgreen;
-    font-style: oblique;
-    height: 50px;
-}
