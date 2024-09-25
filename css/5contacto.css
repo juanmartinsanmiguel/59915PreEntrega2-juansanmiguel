@@ -12,7 +12,7 @@ body{
 }
 
 /*dispositivos L*/
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1000px) {
 
     /*header*/    
     
@@ -61,8 +61,7 @@ body{
         font-family: "roboto";
         font-size: 15px;
         font-weight: 800;
-        color: darkslategrey
-    
+        color: darkslategrey;
     }
     
     /*navegador*/
@@ -72,53 +71,15 @@ body{
         justify-content: space-evenly;
         list-style-type: none;
     }
-    
-    }
-
-
+}
 
 
 main{
-
-    height: 400px;
+    height: 500px;
 }
 
 
 form{
-
     padding-top: 50px;
     padding-left: 150px;
-}
-
-
-
-h3{
-
-    color: lightsalmon;
-    font-style: italic;
-}
-
-#piedepagina{
-    text-align: center;
-    color: darkviolet;
-    display: inline-block;
-    padding-inline: 100px;
-}
-
-.iconos{
-    display:inline-block;
-    padding-inline: 40px;
-    padding-top: 2%;
-}
-
-
-#terminos{
-    color: lightsalmon
-}
-
-footer{
-    background-color: lightgreen;
-    font-style: oblique;
-    height: 50px;
-    
 }
