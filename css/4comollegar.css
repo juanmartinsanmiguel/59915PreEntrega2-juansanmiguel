@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+
+
 a{
     text-decoration-line: none;
 }
@@ -15,10 +17,15 @@ body{
 
 @media screen and (max-width: 600px){
 
+    body{
+        background-color: blue;
+
+    }
+
     #grilla1{
         display: grid;
         height: 255px;
-        grid-template-rows: 120px 50px 50px;
+        grid-template-rows: 155px 50px 50px;
         grid-template-columns: 20% 30% 50%;
         grid-template-areas: "logo vacio vacio2"
                              "marca vacio3 vacio4"
@@ -77,17 +84,18 @@ body{
 
     main{
         display:grid;
-        grid-template-rows: 300px;
+        grid-template-rows: 380px;
         grid-template-columns: 100%;
         align-items: center;
         justify-items: center;
         border-style: solid;
         border-color: darkgoldenrod;
         border-width: 1px 1px 1px 1px;
+        background-color: red;
     }
 
     iframe{
-        height: 90%;
+        height: 80%;
         width: 70%;
     }
 
