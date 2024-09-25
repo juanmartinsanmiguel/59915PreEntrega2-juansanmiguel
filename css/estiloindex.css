@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+/*dispositivos XS S*/
+
+@media screen and (max-width: 600px){
+
+    #grilla1{
+        display: grid;
+        height: 255px;
+        grid-template-rows: 120px 50px 50px;
+        grid-template-columns: 20% 30% 50%;
+        grid-template-areas: "logo vacio vacio2"
+                             "marca vacio3 vacio4"
+                             "nav nav nav";
+        background-color: black;
+        row-gap: 1%;
+    }
+
+    h2{
+        font-family: "Ubuntu";
+        font-size: 14px;
+        color: lightcoral;
+    }
+    
+    #logomarca{
+        height: 65%;
+        width: 90%;
+    }
+
+    #hijo1{
+        background-color: black;
+        grid-area: logo;
+        align-content: center;
+    }
+    
+    #hijo2{
+            background-color: black;
+            grid-area: marca;
+            align-content: center;
+            text-align: center;
+    }
+    
+    #hijo3{
+            background-color: darkgoldenrod;
+            grid-area: nav;
+            height: 100%;
+            align-content: center;
+    }
+
+    .navegador{
+        font-family: "roboto";
+        font-size: 13px;
+        font-weight: 800;
+        color: darkslategrey;
+    }
+    
+    
+    /*navegador*/
+    ul{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+        flex-wrap: nowrap;
+    }
+
+        /*principal main*/
+
+    #grilla2{
+        display: grid;
+        grid-template-rows: 300px 200px;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "nacimos miviva"
+                             "nacimos miviva"
+                             "foto foto";  
+    }
+       /*texto intro*/
+
+    #intro{
+        font-family: "ubuntu";
+        font-size: 14px;
+        color: white;
+    }
+
+    #hijito1{
+        grid-area: nacimos;
+        background-color: black;
+        align-content: center;
+        font-family: "ubuntu";
+        border-style: solid;
+        border-color: darkgoldenrod;
+        border-width: 2px 1px 2px 2px;
+        text-align: center;
+    
+    }
+    
+        /*mision vision valores*/
+    #hijito2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        grid-area: miviva;
+        background-color: black;
+        justify-content: space-evenly;
+        border-style: solid;
+        border-color: darkgoldenrod;
+        border-width: 2px 2px 2px 1px;
+        text-align: center;
+    }
+
+    h3{
+        font-family: "ubuntu";
+        font-size: 20px;
+        color: white;
+    }
+
+    .descriptivo{
+        color: white;
+        font-family: "ubuntu";
+        font-size: 15px;
+    }
+
+    /*imagen esta media fulera, podría buscar algo mejor*/
+    #hijito3{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        grid-area: foto;
+        align-items: center;
+        border-style: solid;
+        border-color: darkgoldenrod;
+        background-color: black;
+        border-width: 2px 1px 1px 1px;
+        justify-content: center;
+    }
+
+    #foto1{
+        height: 80%;
+        width: 50%;
+    }
+
+    #piedepagina{
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        background-color: rgb(216, 126, 91);
+    
+    }
+    
+    .iconos{
+        height:25px;
+        width: 25px;
+    }
+    
+}
+
+/*Dispositivos M*/
+
+@media only screen and (min-width:600px){
+    
+#grilla1{
+    display: grid;
+    height: 279px;
+    grid-template-rows: 223px 50px;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-areas: "logo vacio vacio2"
+                         "marca nav nav";
+    background-color: black;
+    row-gap: 1%;
+}
+    
+h2{
+    font-family: "Ubuntu";
+    font-size: 15px;
+    color: lightcoral;
+}
+    
+#logomarca{
+    height: 70%;
+    width: 100%;
+}
+    
+#hijo1{
+    background-color: black;
+    grid-area: logo;
+    align-content: center;
+}
+
+#hijo2{
+    background-color: black;
+    grid-area: marca;
+    align-content: center;
+    text-align: center;
+}
+
+#hijo3{
+    background-color: darkgoldenrod;
+    grid-area: nav;
+    height: 100%;
+    align-content: center;
+}
+
+.navegador{
+font-family: "roboto";
+font-size: 12px;
+font-weight: 800;
+color: darkslategrey
+}
+
+/*navegador*/
+ul{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+list-style-type: none;
+}
+
+/*principal main*/
+
+#grilla2{
+display: grid;
+grid-template-rows: 200px 200px;
+grid-template-columns: 25% 45% 30%;
+grid-template-areas: "nacimos miviva foto"
+                     "nacimos miviva foto";  
+}
+
+/*texto intro*/
+
+#intro{
+font-family: "ubuntu";
+font-size: 15px;
+color: white;
+
+}
+
+#hijito1{
+grid-area: nacimos;
+background-color: black;
+align-content: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+border-style: solid;
+border-color: darkgoldenrod;
+border-width: 2px 1px 2px 2px;
+text-align: center;
+
+}
+
+
+/*mision vision valores*/
+#hijito2{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+grid-area: miviva;
+background-color: black;
+justify-content: space-evenly;
+border-style: solid;
+border-color: darkgoldenrod;
+border-width: 2px 2px 2px 1px;
+text-align: center;
+}
+
+h3{
+font-family: "ubuntu";
+font-size: 20px;
+color: white;
+}
+
+.descriptivo{
+color: white;
+font-family: "ubuntu";
+font-size: 14px;
+}
+
+
+/*imagen esta media fulera, podría buscar algo mejor*/
+#hijito3{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+grid-area: foto;
+align-items: center;
+border-style: solid;
+border-color: darkgoldenrod;
+background-color: black;
+border-width: 2px 1px 1px 1px;
+justify-content: center;
+}
+
+#foto1{
+height: 70%;
+width: 100%;
+}
+
+#piedepagina{
+display: flex;
+flex-direction: column;
+height: 80px;
+width: 100%;
+flex-wrap: nowrap;
+justify-content: space-evenly;
+background-color: rgb(216, 126, 91);
+}
+
+.iconos{
+height:30px;
+width: 30px;
+}
+}
+
+
+/*dispositivos L*/
+@media only screen and (min-width: 1000px) {
+
+/*header*/    
+
+#grilla1{
+    display: grid;
+    height: 279px;
+    grid-template-rows: 223px 50px;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-areas: "logo vacio vacio2"
+                         "marca vacio3 nav";
+    background-color: black;
+    row-gap: 1%;
+}
+
+h2{
+    font-family: "Ubuntu";
+    font-size: 24px;
+    color: lightcoral;
+}
+
+#logomarca{
+    height: 100%;
+    width: 100%;
+}
+
+#hijo1{
+    background-color: black;
+    grid-area: logo;
+}
+
+#hijo2{
+        background-color: black;
+        grid-area: marca;
+        align-content: center;
+        text-align: center;
+}
+
+#hijo3{
+        background-color: darkgoldenrod;
+        grid-area: nav;
+        height: 100%;
+        align-content: center;
+}
+
+.navegador{
+    font-family: "roboto";
+    font-size: 15px;
+    font-weight: 800;
+    color: darkslategrey;
+}
+
+/*navegador*/
+ul{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+/*principal main*/
+
+#grilla2{
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 25% 45% 30%;
+    grid-template-areas: "nacimos miviva foto"
+                         "nacimos miviva foto";  
+}
+
+/*texto intro*/
+
+#intro{
+    font-family: "ubuntu";
+    font-size: 15px;
+    color: white;
+
+}
+
+#hijito1{
+    grid-area: nacimos;
+    background-color: black;
+    align-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-style: solid;
+    border-color: darkgoldenrod;
+    border-width: 2px 1px 2px 2px;
+    text-align: center;
+
+}
+
+
+/*mision vision valores*/
+#hijito2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    grid-area: miviva;
+    background-color: black;
+    justify-content: space-evenly;
+    border-style: solid;
+    border-color: darkgoldenrod;
+    border-width: 2px 2px 2px 1px;
+    text-align: center;
+}
+
+h3{
+    font-family: "ubuntu";
+    font-size: 22px;
+    color: white;
+}
+
+.descriptivo{
+    color: white;
+    font-family: "ubuntu";
+    font-size: 18px;
+}
+
+
+/*imagen esta media fulera, podría buscar algo mejor*/
+#hijito3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    grid-area: foto;
+    align-items: center;
+    border-style: solid;
+    border-color: darkgoldenrod;
+    background-color: black;
+    border-width: 2px 1px 1px 1px;
+    justify-content: center;
+}
+
+#foto1{
+    height: 70%;
+    width: 100%;
+}
+
+#piedepagina{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background-color: rgb(216, 126, 91);
+
+}
+
+.iconos{
+    height:30px;
+    width: 30px;
+}
+
+
+
+}

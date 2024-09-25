@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+A{
+    text-decoration-line: none;
+}
+
+/*dispositivos L*/
+@media only screen and (min-width: 1000px){
+
+    /*header*/    
+    
+    #grilla1{
+        display: grid;
+        height: 279px;
+        grid-template-rows: 223px 50px;
+        grid-template-columns: 20% 30% 50%;
+        grid-template-areas: "logo vacio vacio2"
+                             "marca vacio3 nav";
+        background-color: black;
+        row-gap: 1%;
+    }
+    
+    h2{
+        font-family: "Ubuntu";
+        font-size: 24px;
+        color: lightcoral;
+    }
+    
+    #logomarca{
+        height: 100%;
+        width: 100%;
+    }
+    
+    #hijo1{
+        background-color: black;
+        grid-area: logo;
+    }
+    
+    #hijo2{
+            background-color: black;
+            grid-area: marca;
+            align-content: center;
+            text-align: center;
+    }
+    
+    #hijo3{
+            background-color: darkgoldenrod;
+            grid-area: nav;
+            height: 100%;
+            align-content: center;
+    }
+    
+    .navegador{
+        font-family: "roboto";
+        font-size: 15px;
+        font-weight: 800;
+        color: darkslategrey
+    
+    }
+    
+    /*navegador*/
+    ul{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+    
+    }
+
+body{
+    background-color: black;
+}
+
+main{
+    padding-top: 25px;
+    padding-left: 220px;
+    height: 500px;
+}
+
+#piedepagina{
+    text-align: center;
+    color: darkviolet;
+    display: inline-block;
+    padding-inline: 100px;
+}
+
+.iconos{
+    display:inline-block;
+    padding-inline: 40px;
+    padding-top: 2%;
+}
+
+footer{
+    background-color: lightgreen;
+    font-style: oblique;
+    height: 50px;
+}
