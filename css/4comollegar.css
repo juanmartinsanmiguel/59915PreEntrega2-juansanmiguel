@@ -11,6 +11,202 @@ body{
     background-color: black;
 }
 
+/*dispositivos XS S*/
+
+@media screen and (max-width: 600px){
+
+    #grilla1{
+        display: grid;
+        height: 255px;
+        grid-template-rows: 120px 50px 50px;
+        grid-template-columns: 20% 30% 50%;
+        grid-template-areas: "logo vacio vacio2"
+                             "marca vacio3 vacio4"
+                             "nav nav nav";
+        background-color: black;
+        row-gap: 1%;
+    }
+
+    h2{
+        font-family: "Ubuntu";
+        font-size: 14px;
+        color: lightcoral;
+    }
+    
+    #logomarca{
+        height: 65%;
+        width: 90%;
+    }
+
+    #hijo1{
+        background-color: black;
+        grid-area: logo;
+        align-content: center;
+    }
+    
+    #hijo2{
+            background-color: black;
+            grid-area: marca;
+            align-content: center;
+            text-align: center;
+    }
+    
+    #hijo3{
+            background-color: darkgoldenrod;
+            grid-area: nav;
+            height: 100%;
+            align-content: center;
+    }
+
+    .navegador{
+        font-family: "roboto";
+        font-size: 13px;
+        font-weight: 800;
+        color: darkslategrey;
+    }
+    
+    
+    /*navegador*/
+    ul{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+        flex-wrap: nowrap;
+    }
+
+    main{
+        display:grid;
+        grid-template-rows: 300px;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-items: center;
+        border-style: solid;
+        border-color: darkgoldenrod;
+        border-width: 1px 1px 1px 1px;
+    }
+
+    iframe{
+        height: 90%;
+        width: 70%;
+    }
+
+    #piedepagina{
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        background-color: rgb(216, 126, 91);
+        }
+        
+        .iconos{
+        height:30px;
+        width: 30px;
+        }
+        
+}
+
+/*Dispositivos M*/
+
+@media only screen and (min-width:600px){
+    
+
+    #grilla1{
+        display: grid;
+        height: 330px;
+        grid-template-rows: 223px 50px;
+        grid-template-columns: 20% 30% 50%;
+        grid-template-areas: "logo vacio vacio2"
+                             "marca nav nav";
+        background-color: black;
+        row-gap: 1%;
+    }
+        
+    h2{
+        font-family: "Ubuntu";
+        font-size: 15px;
+        color: lightcoral;
+    }
+        
+    #logomarca{
+        height: 70%;
+        width: 100%;
+    }
+        
+    #hijo1{
+        background-color: black;
+        grid-area: logo;
+        align-content: center;
+    }
+    
+    #hijo2{
+        background-color: black;
+        grid-area: marca;
+        align-content: center;
+        text-align: center;
+    }
+    
+    #hijo3{
+        background-color: darkgoldenrod;
+        grid-area: nav;
+        height: 100%;
+        align-content: center;
+    }
+    
+    .navegador{
+    font-family: "roboto";
+    font-size: 12px;
+    font-weight: 800;
+    color: darkslategrey
+    }
+    
+    /*navegador*/
+    ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    }
+
+    /*principal*/
+
+    main{
+        display:grid;
+        grid-template-rows: 300px;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-items: center;
+        border-style: solid;
+        border-color: darkgoldenrod;
+        border-width: 1px 1px 1px 1px;
+    }
+
+    iframe{
+        height: 90%;
+        width: 50%;
+    }
+
+    #piedepagina{
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        background-color: rgb(216, 126, 91);
+        }
+        
+        .iconos{
+        height:30px;
+        width: 30px;
+        }
+        
+
+}
+
+
 /*dispositivos L*/
 @media only screen and (min-width: 1000px){
 
@@ -73,6 +269,8 @@ body{
         list-style-type: none;
     }
     
+    /*principal*/
+
     main{
         display:grid;
         grid-template-rows: 500px;
@@ -81,8 +279,16 @@ body{
         justify-items: center;
         border-style: solid;
         border-color: darkgoldenrod;
-        border-width: 1px 1px 2px 2px;
+        border-width: 1px 1px 1px 1px;
     }
+
+    iframe{
+        height: 90%;
+        width: 50%;
+    }
+
+
+    /*footer*/
 
     #piedepagina{
         display: flex;
