@@ -17,10 +17,9 @@ body{
 
 @media screen and (max-width: 600px){
 
-    body{
-        background-color: blue;
+    /*header*/
 
-    }
+
 
     #grilla1{
         display: grid;
@@ -91,7 +90,6 @@ body{
         border-style: solid;
         border-color: darkgoldenrod;
         border-width: 1px 1px 1px 1px;
-        background-color: red;
     }
 
     iframe{
